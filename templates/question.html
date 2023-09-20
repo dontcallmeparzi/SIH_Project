@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+    body {
+  background-image: linear-gradient(to bottom, #fbc2eb, #a6c1ee);
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  text-align: center;
+  margin-top: 250px;
+
+}
+
+p {
+    font-size: 32px;
+  color: #333;
+}
+
+input[type="radio"] {
+  accent-color: #800080;
+  font-size: 24px;
+}
+
+input[type="submit"] {
+  background-color: #800080;
+  box-shadow: 2px 2px #ddd;  
+  font-size: 28px;
+}
+
+input[type="submit"]:hover {
+  background-color: #9932cc;
+  font-size: 28px;
+}
+    </style>
+  </head>
+  
+  <body>
+
+    <form action="/check" method="POST">
+
+      <p>{{ q.question }}</p>
+
+      <input type="radio" name="answer" value="a">A<br>
+      <input type="radio" name="answer" value="b">B<br>
+      <input type="radio" name="answer" value="c">C<br>  
+      <input type="radio" name="answer" value="d">D<br>
+
+      <input type="submit" value="Submit">
+
+    </form>
+
+  </body>
+</html>

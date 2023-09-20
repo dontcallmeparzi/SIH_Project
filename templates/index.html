@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+  background-image: linear-gradient(to bottom, #fbc2eb, #a6c1ee);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  text-align: center; 
+  margin-top: 250px;
+}
+
+h1 {
+  font-family: 'Arial Rounded MT Bold';  
+  color: #800080;
+  text-shadow: 2px 2px #ddd;
+  font-size: 48px;
+}
+
+p {
+  font-size: 28px;
+  color: #333;  
+}
+
+input[type="submit"] {
+  background-color: #812881;
+  box-shadow: 2px 2px #ddd;
+  font-size: 24px;
+}
+
+input[type="submit"]:hover {
+  background-color: #9932cc;
+  font-size: 24px;
+}
+
+  </style>
+</head>
+
+<body>
+
+  <h1>Engineering Quiz</h1>
+
+  <p>Welcome! Press start to begin the quiz.</p>
+
+  <form action="/start" method="POST">
+    <input type="submit" value="Start Quiz">
+  </form>
+
+</body>
+</html>
